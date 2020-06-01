@@ -7,8 +7,23 @@
     },
     {
       "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull"
+      "name": "Doodles",
+      "breed": "German Sheperd"
+    },
+    {
+      "id": 4,
+      "name": "Orby",
+      "breed": "The Cat"
+    },
+    {
+      "id": 5,
+      "name": "Zula",
+      "breed": "Also a cat"
+    },
+    {
+      "id": 6,
+      "name": "Princess Shithead",
+      "breed": "Pat's dog"
     }
   ]
 }

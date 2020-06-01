@@ -8,7 +8,6 @@ class Kennel extends Component {
     // kennelName= "Student Kennels"
 
   render() {
-      console.log("We are in the render method")
     return (
       <>
         <NavBar />

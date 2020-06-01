@@ -37,7 +37,7 @@ class AnimalList extends Component {
       <div className="container-cards">
         {this.state.animals.map((currentAnimalInLoop) => {
         console.log("this is a current animal in the loop", currentAnimalInLoop)
-          return <AnimalCard key={currentAnimalInLoop.id} animal={currentAnimalInLoop} taco={this.deleteAnimal} />;
+          return <AnimalCard key={currentAnimalInLoop.id} animal={currentAnimalInLoop} deleteAnimal={this.deleteAnimal} />;
         })}
       </div>
     );
