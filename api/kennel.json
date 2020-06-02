@@ -24,6 +24,16 @@
       "id": 6,
       "name": "Princess Shithead",
       "breed": "Pat's dog"
+    },
+    {
+      "name": "Mia",
+      "breed": "Mutt",
+      "id": 7
+    },
+    {
+      "name": "Babe",
+      "breed": "Pig",
+      "id": 8
     }
   ]
 }

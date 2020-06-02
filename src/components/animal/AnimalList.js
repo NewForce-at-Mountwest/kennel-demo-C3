@@ -34,12 +34,22 @@ class AnimalList extends Component {
     // console.log("ANIMAL LIST: Render");
 
     return (
+      <>
+    <section className="section-content">
+    <button type="button"
+        className="btn"
+        onClick={() => {this.props.history.push("/animals/new")}}>
+        Admit Animal
+    </button>
+  </section>
+
       <div className="container-cards">
         {this.state.animals.map((currentAnimalInLoop) => {
         console.log("this is a current animal in the loop", currentAnimalInLoop)
           return <AnimalCard key={currentAnimalInLoop.id} animal={currentAnimalInLoop} deleteAnimal={this.deleteAnimal} />;
         })}
       </div>
+      </>
     );
   }
 }
