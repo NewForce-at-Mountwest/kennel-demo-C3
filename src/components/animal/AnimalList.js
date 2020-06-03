@@ -9,15 +9,7 @@ class AnimalList extends Component {
     animals: [],
   };
 
-  deleteAnimal = id => {
-      AnimalManager.delete(id)
-      .then(AnimalManager.getAll)
-      .then((newanimals) => {
-          this.setState({
-              animals: newanimals
-          })
-      })
-  }
+
 
   componentDidMount() {
     // console.log("ANIMAL LIST: ComponentDidMount");
