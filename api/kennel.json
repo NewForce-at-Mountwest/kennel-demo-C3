@@ -3,22 +3,34 @@
     {
       "id": 4,
       "name": "Orby",
-      "breed": "The Cat"
+      "breed": "The Cat",
+      "employeeId": 1
     },
     {
       "id": 5,
       "name": "Zula",
-      "breed": "Also a cat"
+      "breed": "Also a cat",
+      "employeeId": 1
     },
     {
       "id": 6,
       "name": "Charlotte",
-      "breed": "Pat's dog"
+      "breed": "Pat's dog",
+      "employeeId": 1
     },
     {
       "name": "Mia",
       "breed": "Mutt",
-      "id": 7
+      "id": 7,
+      "employeeId": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Mandy",
+      "email": "mandy@mandy.com",
+      "password": "123"
     }
   ]
 }

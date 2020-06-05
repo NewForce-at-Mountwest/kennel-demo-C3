@@ -22,6 +22,10 @@ class Login extends Component {
         For now, just store the email and password that
         the customer enters into local storage.
     */
+   // Fetch from json-server the employee that matches the email in state
+   // Check and make sure the employee's password in the database matches the password that the user typed in
+   // Store the employee's id in local storage instead of their email and password
+
     localStorage.setItem(
         "credentials",
         JSON.stringify({
