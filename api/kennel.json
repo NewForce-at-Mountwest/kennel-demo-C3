@@ -16,13 +16,19 @@
       "id": 6,
       "name": "Charlotte",
       "breed": "Pat's dog",
-      "employeeId": 1
+      "employeeId": 2
     },
     {
       "name": "Mia",
       "breed": "Mutt",
       "id": 7,
       "employeeId": 1
+    },
+    {
+      "name": "jack",
+      "breed": "terrier",
+      "id": 8,
+      "employeeId": 2
     }
   ],
   "employees": [
@@ -31,6 +37,12 @@
       "name": "Mandy",
       "email": "mandy@mandy.com",
       "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Austin",
+      "email": "austin@austin.com",
+      "password": 123
     }
   ]
 }

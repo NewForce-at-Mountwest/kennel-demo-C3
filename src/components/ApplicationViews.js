@@ -5,7 +5,8 @@ import AnimalDetail from "./animal/AnimalDetail";
 import AnimalForm from "./animal/AnimalForm";
 import Login from "./auth/Login";
 import { Route, withRouter, Redirect } from "react-router-dom";
-import AnimalEditForm from "./animal/AnimalEditForm"
+import AnimalEditForm from "./animal/AnimalEditForm";
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals"
 //only include these once they are built - previous practice exercise
 // import LocationCard from './location/LocationCard'
 // import EmployeeCard from './employee/EmployeeCard'
@@ -42,7 +43,7 @@ class ApplicationViews extends Component {
         />
         <Route
           exact
-          path="/animals"
+          path="/taco"
           render={(props) => {
             if (this.isAuthenticated()) {
               return <AnimalList {...props} />;
@@ -52,7 +53,8 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          exact path="/animals/:animalId(\d+)"
+          exact
+          path="/animals/:animalId(\d+)"
           render={(props) => {
             console.log("this is props from application views", props);
             return (
@@ -76,6 +78,13 @@ class ApplicationViews extends Component {
         />
 
         <Route path="/login" component={Login} />
+
+        <Route
+          path="/employees/:employeeId(\d+)"
+          render={(props) => {
+            return <EmployeeWithAnimals {...props} />;
+          }}
+        />
       </>
     );
   }
