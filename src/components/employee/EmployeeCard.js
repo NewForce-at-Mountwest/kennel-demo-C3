@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class AnimalCard extends Component {
+class EmployeeCard extends Component {
   render() {
     return (
       <div className="card">
         <div className="card-content">
           <h3>
-            Name:
-            <span className="card-petname">{this.props.animal.name}</span>
+            Name:{" "}
+            <span className="card-petname">{this.props.resource.name}</span>
           </h3>
-          <p>Breed: {this.props.animal.breed}</p>
-          <Link to={`/animals/${this.props.animal.id}`}>
+          <Link to={`/${resourceName}/${this.props.resource.id}`}>
             <button>Details</button>
           </Link>
         </div>
@@ -20,4 +19,4 @@ class AnimalCard extends Component {
   }
 }
 
-export default AnimalCard;
+export default EmployeeCard;

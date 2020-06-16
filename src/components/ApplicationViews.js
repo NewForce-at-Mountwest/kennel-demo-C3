@@ -6,19 +6,12 @@ import AnimalForm from "./animal/AnimalForm";
 import Login from "./auth/Login";
 import { Route, withRouter, Redirect } from "react-router-dom";
 import AnimalEditForm from "./animal/AnimalEditForm";
-import EmployeeWithAnimals from "./employee/EmployeeWithAnimals"
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals";
+import EmployeeList from "./employee/EmployeeList"
 //only include these once they are built - previous practice exercise
 // import LocationCard from './location/LocationCard'
 // import EmployeeCard from './employee/EmployeeCard'
 // import OwnerCard from './owner/OwnerCard'
-
-// User clicks on edit button
-// Building an edit form
-// fetch call to db to GET the values of the animal that they clicked on
-// When the data comes back, set it to state
-// Edit form should have pre-populated values from database
-// For should have a button that says "submit" or whatevs
-// fetch call --> PUT (send user values to the form)
 
 class ApplicationViews extends Component {
   isAuthenticated = () => localStorage.getItem("credentials") !== null;
@@ -83,6 +76,13 @@ class ApplicationViews extends Component {
           path="/employees/:employeeId(\d+)"
           render={(props) => {
             return <EmployeeWithAnimals {...props} />;
+          }}
+        />
+
+        <Route
+          exact path="/employees"
+          render={(props) => {
+            return <EmployeeList{...props} />;
           }}
         />
       </>
