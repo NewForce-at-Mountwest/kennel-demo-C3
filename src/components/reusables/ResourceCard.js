@@ -5,7 +5,7 @@ class ResourceCard extends Component {
   render() {
     return (
       <div
-        className={`card-body ${
+        className={`card ${
           this.props.resourceName === "animals" ? "animal-card" : ""
         } `}
       >
